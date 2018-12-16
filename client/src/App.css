@@ -1,0 +1,23 @@
+
+.App{
+    margin: 10% 10%;
+    text-align: center;
+}
+
+
+.inputNumber{
+    width: 20vw;
+    height: 2vh;
+    padding: 0.5% 0.5%;
+    margin: 5% 1%;
+}
+
+.submit{
+    background-color: royalblue;
+    color: white;
+    height: 6vh;
+    width: 8vw;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border-color: white;
+}
