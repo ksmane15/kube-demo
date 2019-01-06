@@ -23,7 +23,7 @@ class App extends Component {
   handleSubmit(e){
     e.preventDefault();
     console.log(this.state.number)
-    fetch('http://localhost:5000/api/square',{
+    fetch('http://demo-webapp-service/api/square',{
       method:'POST',
       body: JSON.stringify({number:this.state.number}),
       headers: {"Content-Type": "application/json"}

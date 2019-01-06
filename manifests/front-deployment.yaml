@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment                                          
+metadata:
+  name: demo-front
+spec:
+  replicas: 1                                             
+  template:
+    metadata:
+      labels:
+        app: demo-front                                  
+    spec:
+      containers:
+        - image: ksmane15/k8s-demo-front
+          name: demo-front
+          ports:
+            - containerPort: 80

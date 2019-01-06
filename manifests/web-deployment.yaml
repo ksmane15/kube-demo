@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment                                          
+metadata:
+  name: demo-webapp
+spec:
+  replicas: 1                                             
+  template:
+    metadata:
+      labels:
+        app: demo-webapp                                  
+    spec:
+      containers:
+        - image: ksmane15/k8s-demo-webapp
+          name: demo-webapp
+          ports:
+            - containerPort: 5000
